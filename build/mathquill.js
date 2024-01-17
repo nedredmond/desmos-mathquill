@@ -2534,11 +2534,8 @@ function getInterface(v) {
     return MQ;
 }
 MathQuill.noConflict = function () {
-    window.MathQuill = origMathQuill;
     return MathQuill;
 };
-var origMathQuill = window.MathQuill;
-window.MathQuill = MathQuill;
 function RootBlockMixin(_) {
     _.moveOutOf = function (dir) {
         pray('controller is defined', this.controller);
